@@ -18,7 +18,8 @@ export class Produto {
                  private tipoProduto?:number,
                  private precoAtual?:number,
                  private precoAntigo?:number,
-                 private marca?:string
+                 private marca?:string,
+                 private quantidade?:number
                ){
     }
 
@@ -116,5 +117,13 @@ export class Produto {
 
     public set p_marca(marca: string) {
         this.marca = marca;
+    }
+
+    public get p_quantidade(): number {
+        return this.quantidade;
+    }
+
+    public set p_quantidade(quantidade: number) {
+        this.quantidade = quantidade;
     }
 }

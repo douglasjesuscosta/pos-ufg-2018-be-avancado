@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Produto } from '../produto-model/Produto';
-import { TipoProduto } from '../produto-model/TipoProduto';
+import { Produto } from '../models/produto-model/Produto';
+import { TipoProduto } from '../models/produto-model/TipoProduto';
 
 @Injectable({
   providedIn: 'root'
@@ -28,7 +28,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 4,
         p_precoAtual: 2999,
         p_precoAntigo: 4000,
-        p_marca: 'Samsung'
+        p_marca: 'Samsung',
+        p_quantidade: 0
       },
       {
         p_id: 2,
@@ -42,7 +43,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 4,
         p_precoAtual: 2399,
         p_precoAntigo: 2500,
-        p_marca: 'Samsung'
+        p_marca: 'Samsung',
+        p_quantidade: 0
       },
       {
         p_id: 3,
@@ -56,7 +58,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 4,
         p_precoAtual: 8000,
         p_precoAntigo: 15000,
-        p_marca: 'Apple'
+        p_marca: 'Apple',
+        p_quantidade: 0
       },
       {
         p_id: 4,
@@ -70,7 +73,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 4,
         p_precoAtual: 1029,
         p_precoAntigo: 2000,
-        p_marca: 'Motorola'
+        p_marca: 'Motorola',
+        p_quantidade: 0
       },
       {
         p_id: 5,
@@ -84,7 +88,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 1,
         p_precoAtual: 1299,
         p_precoAntigo: 1400,
-        p_marca: 'Consul'
+        p_marca: 'Consul',
+        p_quantidade: 0
       },
       {
         p_id: 6,
@@ -98,7 +103,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 1,
         p_precoAtual: 2399,
         p_precoAntigo: 3000,
-        p_marca: 'Eletrolux'
+        p_marca: 'Eletrolux',
+        p_quantidade: 0
       },
       {
         p_id: 7,
@@ -112,7 +118,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 4,
         p_precoAtual: 500,
         p_precoAntigo: 400,
-        p_marca: 'Bartira'
+        p_marca: 'Bartira',
+        p_quantidade: 0
       },
       {
         p_id: 8,
@@ -126,7 +133,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 2,
         p_precoAtual: 599,
         p_precoAntigo: 1000,
-        p_marca: 'Bartira'
+        p_marca: 'Bartira',
+        p_quantidade: 0
       },
       {
         p_id: 9,
@@ -140,7 +148,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 5,
         p_precoAtual: 500,
         p_precoAntigo: 400,
-        p_marca: 'Tramontina'
+        p_marca: 'Tramontina',
+        p_quantidade: 0
       },
       {
         p_id: 10,
@@ -154,7 +163,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 5,
         p_precoAtual: 50,
         p_precoAntigo: 200,
-        p_marca: 'Tramontina'
+        p_marca: 'Tramontina',
+        p_quantidade: 0
       },
       {
         p_id: 11,
@@ -168,7 +178,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 6,
         p_precoAtual: 100,
         p_precoAntigo: 200,
-        p_marca: 'Caloi'
+        p_marca: 'Caloi',
+        p_quantidade: 0
       },
       {
         p_id: 12,
@@ -182,7 +193,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 6,
         p_precoAtual: 500,
         p_precoAntigo: 400,
-        p_marca: 'Caloi'
+        p_marca: 'Caloi',
+        p_quantidade: 0
       },
       {
         p_id: 13,
@@ -196,7 +208,8 @@ export class ProdutosServiceService {
         p_tipoProduto: 7,
         p_precoAtual: 1044,
         p_precoAntigo: 2000,
-        p_marca: 'Samsung'
+        p_marca: 'Samsung',
+        p_quantidade: 0
       }
 
     ]

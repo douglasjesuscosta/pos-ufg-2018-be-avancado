@@ -1,0 +1,20 @@
+<div class="row list-group-item clearfix">
+  <span style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" class="col-md-5">
+    <a>
+      <h4 class="list-group-item-text">{{ product.p_nome }}</h4>
+      <p class="list-group-item-text">R$ {{ product.p_precoAtual }}</p>
+    </a>
+  </span>
+    
+  <span class="col-md-3">
+    <img [src]="product.p_urlPrincipalImage" alt="{{ product.p_nome }}" class="img-responsive" style="max-height: 100px;">
+  </span>
+    
+  <span class="col-md-2">
+    <label for="name">Quantidade</label>
+    <input type="number" id="name" class="form-control" [(ngModel)]="product.p_quantidade">
+  </span>
+  <span class="col-md-2">
+    <i class="fas fa-trash-alt fa-2x"></i>
+  </span>
+</div>
