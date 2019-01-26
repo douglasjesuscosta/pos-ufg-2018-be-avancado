@@ -1,6 +1,6 @@
 <div class="row list-group-item clearfix">
-  <span style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" class="col-md-5">
-    <a>
+  <span style="cursor: pointer;" class="col-md-5">
+    <a routerLink="/produto/{{product.p_id}}">
       <h4 class="list-group-item-text">{{ product.p_nome }}</h4>
       <p class="list-group-item-text">R$ {{ product.p_precoAtual }}</p>
     </a>
