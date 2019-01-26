@@ -47,7 +47,7 @@ export class CartService {
     return this.produtos.find(p => p.p_id == index);
   }
 
-  addProduto(index: number) {
-    this.produtos.push(this.getProduto(index));
+  addProduto(product: Produto) {
+    this.produtos.push(product);
   }
 }
