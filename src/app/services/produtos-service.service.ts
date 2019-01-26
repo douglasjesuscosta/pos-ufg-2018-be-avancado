@@ -217,4 +217,16 @@ export class ProdutosServiceService {
   getProduto(index: number) {
     return this.produtos.find(p => p.p_id === index);
   }
+
+  getProdutosPorCategoria(tipoProduto:TipoProduto): Array<Produto>{
+    var produtosTipoSelecionado = this.produtos.filter(produto => produto.p_tipoProduto == tipoProduto);
+    return produtosTipoSelecionado;
+  }
+
+  getQuatroProdutosMaisVendidosPorCategoria(tipoProduto:TipoProduto): Array<Produto>{
+    var produtosTipoSolicitado:Array<Produto> = this.getProdutosPorCategoria(tipoProduto);
+    produtosTipoSolicitado.sort((a, b) => a.p_quantidade - b.p_quantidade);
+    return produtosTipoSolicitado.slice(0, 4);
+  }
+  
 }

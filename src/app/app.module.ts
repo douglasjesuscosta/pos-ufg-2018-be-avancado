@@ -12,6 +12,9 @@ import { CartProductItemComponent } from './cart/cart-list/cart-product-item/car
 import { ProductComponent } from './product/product.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CatalogueBestProductsComponent } from './catalogue/catalogue-best-products/catalogue-best-products.component';
+import { ProductCarouselComponent } from './catalogue/product-carousel/product-carousel.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     CartComponent,
     CartListComponent,
     CartProductItemComponent,
-    ProductComponent
+    ProductComponent, 
+    ProductCarouselComponent, 
+    CatalogueComponent,
+    CatalogueBestProductsComponent
   ],
   imports: [
     BrowserModule,
