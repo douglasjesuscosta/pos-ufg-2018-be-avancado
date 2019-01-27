@@ -1,13 +1,15 @@
 .btn {
-    background-color: DodgerBlue;
+    background-color: gray;
     border: none;
     color: white;
     padding: 12px 16px;
     font-size: 16px;
     cursor: pointer;
+    opacity: 0.3;
   }
   
   /* Darker background on mouse-over */
   .btn:hover {
-    background-color: RoyalBlue;
+    background-color: red;
+    opacity: 1;
   }
