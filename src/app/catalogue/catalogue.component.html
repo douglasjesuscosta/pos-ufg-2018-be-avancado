@@ -1,5 +1,25 @@
 
-<div *ngIf="exibirComponentCategoria == false">
-    <app-catalogue-best-products></app-catalogue-best-products>
-</div>
+    <div class="col-lg-3">
+        <h3 class="my-4">Categorias</h3>
+        <div class="list-group">
+            <a class="list-group-item" (click)="onCategoryClick(1)">Eletrodomesticos</a>
+            <a class="list-group-item" (click)="onCategoryClick(2)">Informática</a>
+            <a class="list-group-item" (click)="onCategoryClick(3)">Móveis</a>
+            <a class="list-group-item" (click)="onCategoryClick(4)">Telefones e celulares</a>
+            <a class="list-group-item" (click)="onCategoryClick(5)">Utilidades domésticas</a>
+            <a class="list-group-item" (click)="onCategoryClick(6)">Esportes</a>
+            <a class="list-group-item" (click)="onCategoryClick(7)">Tv e vídeo</a>
+        </div>
+    </div>
+    
+    <div class="col-lg-9" *ngIf="exibirComponentCategoria == false">
+        <app-catalogue-best-products></app-catalogue-best-products>
+    </div>
+
+    <div class="col-lg-9" *ngIf="exibirComponentCategoria == true">
+        <app-catalogue-products-categories [idCategoria]=""></app-catalogue-products-categories>
+    </div>
+
+
+
 

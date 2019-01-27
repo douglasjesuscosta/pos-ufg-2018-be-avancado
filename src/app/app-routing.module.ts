@@ -8,7 +8,7 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
 
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/bemvindo', pathMatch: 'full' },
+  { path: '', redirectTo: '/produtos', pathMatch: 'full' },
   { path: 'bemvindo', component: HomeComponent },
   { path: 'meucarrinho', component: CartComponent},
   { path: 'produto/:id', component: ProductComponent },

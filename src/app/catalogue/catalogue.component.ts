@@ -25,4 +25,9 @@ export class CatalogueComponent implements OnInit {
     this.exibirComponentCategoria = this.tipoProdutoSelecionado == null ? false : true;
   }
 
+  onCategoryClick(categoryNumber){
+    this.exibirComponentCategoria = true;
+    this.catalogoService.setTipoProdutoSelecionado(categoryNumber);
+  }
+
 }

@@ -15,6 +15,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CatalogueBestProductsComponent } from './catalogue/catalogue-best-products/catalogue-best-products.component';
 import { ProductCarouselComponent } from './catalogue/product-carousel/product-carousel.component';
 import { CatalogueComponent } from './catalogue/catalogue.component';
+import { CatalogueProductsCategoriesComponent } from './catalogue/catalogue-products-categories/catalogue-products-categories.component';
+import { CatalogueCategoriesComponent } from './catalogue/catalogue-categories/catalogue-categories.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
     ProductComponent, 
     ProductCarouselComponent, 
     CatalogueComponent,
-    CatalogueBestProductsComponent
+    CatalogueBestProductsComponent,
+    CatalogueProductsCategoriesComponent,
+    CatalogueCategoriesComponent
   ],
   imports: [
     BrowserModule,
