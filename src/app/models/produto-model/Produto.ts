@@ -19,7 +19,8 @@ export class Produto {
                  private precoAtual?:number,
                  private precoAntigo?:number,
                  private marca?:string,
-                 private quantidade?:number
+                 private quantidade?:number,
+                 private quantidadeVendas?:number
                ){
     }
 
@@ -125,5 +126,13 @@ export class Produto {
 
     public set p_quantidade(quantidade: number) {
         this.quantidade = quantidade;
+    }
+
+    public get p_quantidadeVendas(): number {
+        return this.quantidadeVendas;
+    }
+
+    public set p_quantidadeVendas(quantidadeVendas: number) {
+        this.quantidadeVendas = quantidadeVendas;
     }
 }

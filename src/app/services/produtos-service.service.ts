@@ -21,7 +21,8 @@ export class ProdutosServiceService {
       p_precoAtual: 2999,
       p_precoAntigo: 4000,
       p_marca: 'Samsung',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 2
     },
     {
       p_id: 2,
@@ -36,7 +37,8 @@ export class ProdutosServiceService {
       p_precoAtual: 2399,
       p_precoAntigo: 2500,
       p_marca: 'Samsung',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 5
     },
     {
       p_id: 3,
@@ -51,7 +53,8 @@ export class ProdutosServiceService {
       p_precoAtual: 8000,
       p_precoAntigo: 15000,
       p_marca: 'Apple',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 6
     },
     {
       p_id: 4,
@@ -66,7 +69,8 @@ export class ProdutosServiceService {
       p_precoAtual: 1029,
       p_precoAntigo: 2000,
       p_marca: 'Motorola',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 7
     },
     {
       p_id: 5,
@@ -81,7 +85,8 @@ export class ProdutosServiceService {
       p_precoAtual: 1299,
       p_precoAntigo: 1400,
       p_marca: 'Consul',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 9
     },
     {
       p_id: 6,
@@ -96,7 +101,8 @@ export class ProdutosServiceService {
       p_precoAtual: 2399,
       p_precoAntigo: 3000,
       p_marca: 'Eletrolux',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 5
     },
     {
       p_id: 7,
@@ -111,7 +117,8 @@ export class ProdutosServiceService {
       p_precoAtual: 500,
       p_precoAntigo: 400,
       p_marca: 'Bartira',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 10
     },
     {
       p_id: 8,
@@ -126,7 +133,8 @@ export class ProdutosServiceService {
       p_precoAtual: 599,
       p_precoAntigo: 1000,
       p_marca: 'Bartira',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 79
     },
     {
       p_id: 9,
@@ -141,7 +149,8 @@ export class ProdutosServiceService {
       p_precoAtual: 500,
       p_precoAntigo: 400,
       p_marca: 'Tramontina',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 43
     },
     {
       p_id: 10,
@@ -156,7 +165,8 @@ export class ProdutosServiceService {
       p_precoAtual: 50,
       p_precoAntigo: 200,
       p_marca: 'Tramontina',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 5
     },
     {
       p_id: 11,
@@ -171,7 +181,8 @@ export class ProdutosServiceService {
       p_precoAtual: 100,
       p_precoAntigo: 200,
       p_marca: 'Caloi',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 5
     },
     {
       p_id: 12,
@@ -186,7 +197,8 @@ export class ProdutosServiceService {
       p_precoAtual: 500,
       p_precoAntigo: 400,
       p_marca: 'Caloi',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 15
     },
     {
       p_id: 13,
@@ -201,7 +213,8 @@ export class ProdutosServiceService {
       p_precoAtual: 1044,
       p_precoAntigo: 2000,
       p_marca: 'Samsung',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 9
     },
 
     {
@@ -217,8 +230,121 @@ export class ProdutosServiceService {
       p_precoAtual: 1044,
       p_precoAntigo: 2000,
       p_marca: 'Samsung',
-      p_quantidade: 1
-    }
+      p_quantidade: 1,
+      p_quantidadeVendas: 45
+    },
+    {
+      p_id: 15,
+      p_nome: 'Smart TV LED LG 28 HD',
+      p_modelo: '28MT49S-PS',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11728441/1073744566/smart-tv-led-lg-28-hd-28mt49s-ps-conversor-digital-wi-fi-integrado-usb-hdmi-webos-35-screen-share-11728441.jpg',
+      p_urlsImages: ['https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11728441/1073744963/smart-tv-led-lg-28-hd-28mt49s-ps-conversor-digital-wi-fi-integrado-usb-hdmi-webos-35-screen-share-11728441.jpg', 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11728441/1073745145/smart-tv-led-lg-28-hd-28mt49s-ps-conversor-digital-wi-fi-integrado-usb-hdmi-webos-35-screen-share-11728441.jpg'],
+      p_classificacao: 4,
+      p_descricaoBreve: 'G: Smart TV LED LG 28 HD 28MT49S-PS Conversor Digital Wi-Fi integrado USB HDMI WebOS 3.5 Screen Share.',
+      p_descricaoDetalhada: 'Com resolução HD, conta com conector de entrada,USB, 2xHDMI, Antena/Cabo, Componente/Composto, LAN, Saída de Áudio Óptico. Conexão Internet : via LAN (cabo) ou Wi-fi (integrado). E mais com WebOS 3.5, acesso aos aplicativos Youtube, Netflix, Spotify, Screen Share, a conectividade estará garantida com todo conforto que você merece sem sair de casa. Aproveite!.',
+      p_tipoProduto: 7,
+      p_precoAtual: 925,
+      p_precoAntigo: 2500,
+      p_marca: 'LG',
+      p_quantidade: 1,
+      p_quantidadeVendas: 24
+    },
+    {
+      p_id: 16,
+      p_nome: 'Smart TV LED 55" UHD 4K',
+      p_modelo: '28MT49S-PS',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/TV4K/11629082/845760221/smart-tv-led-55-uhd-4k-curva-samsung-55mu6500-com-hdr-premium-plataforma-smart-tizen-controle-remoto-unico-design-360-smart-view-hdmi-e-usb-11629082.jpg',
+      p_urlsImages: ['https://www.pontofrio-imagens.com.br/tv-video/Televisores/TV4K/11629082/845760237/smart-tv-led-55-uhd-4k-curva-samsung-55mu6500-com-hdr-premium-plataforma-smart-tizen-controle-remoto-unico-design-360-smart-view-hdmi-e-usb-11629082.jpg', 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/TV4K/11629082/845760259/smart-tv-led-55-uhd-4k-curva-samsung-55mu6500-com-hdr-premium-plataforma-smart-tizen-controle-remoto-unico-design-360-smart-view-hdmi-e-usb-11629082.jpg'],
+      p_classificacao: 7,
+      p_descricaoBreve: 'Curva Samsung 55MU6500 com HDR Premium, Plataforma Smart Tizen, Controle Remoto Único, Design 360, Smart View, HDMI e USB.',
+      p_descricaoDetalhada: 'A TV Samsung MU6500 apresenta o melhor da tecnologia UHD 4K, com painéis RGB e com a máxima fidelidade de cores, sem sub-píxel branco. Cerificada pelas principais associações internacionais do setor.',
+      p_tipoProduto: 7,
+      p_precoAtual: 4599,
+      p_precoAntigo: 8000,
+      p_marca: 'Samsung',
+      p_quantidade: 1,
+      p_quantidadeVendas: 450
+    },
+    {
+      p_id: 17,
+      p_nome: 'Smart TV LED 55" Full HD Philips ',
+      p_modelo: '55PFG5100/78',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/5116744/156020181/smart-tv-led-55-full-hd-philips-55pfg5100-78-com-perfect-motion-rate-120hz-pixel-plus-hd-wi-fi-entradas-hdmi-e-entrada-usb-5116744.jpg',
+      p_urlsImages: ['https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/5116744/142964889/smart-tv-led-55-full-hd-philips-55pfg5100-78-com-perfect-motion-rate-120hz-pixel-plus-hd-wi-fi-entradas-hdmi-e-entrada-usb-5116744.jpg', 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/5116744/142964924/smart-tv-led-55-full-hd-philips-55pfg5100-78-com-perfect-motion-rate-120hz-pixel-plus-hd-wi-fi-entradas-hdmi-e-entrada-usb-5116744.jpg'],
+      p_classificacao: 7,
+      p_descricaoBreve: 'A 55PFG5100/78 é uma TV grande que vai fazer a alegria de toda a família, principalmente se a sua gosta de assistir programas e filmes toda reunida. O painel da televisão LED da Philips tem 55 polegadas.',
+      p_descricaoDetalhada: 'Este aparelho foi equipado com a definição de imagem Full HD, para detalhes muito mais nítidos, brilho ainda mais alto e contraste incrível. Todas as cores são ainda mais fiéis a realidade nesta tela. Tecnologias de melhoria de imagem, como o Pixel Plus HD e o PMR (Perfect Motion Rate) de 120Hz proporcionam uma qualidade superior da tela, seja para a programação tradicional da TV, seja para filmes ou games. O que você mais gosta ficará lindo neste telão! A Philips incluiu três entradas HDMI para você conectar tocadores, sistemas de som, videogames de nova geração e até mesmo computadores à TV. E ainda traz uma porta USB para conectar periféricos, como pen drives.',
+      p_tipoProduto: 7,
+      p_precoAtual: 1599,
+      p_precoAntigo: 2000,
+      p_marca: 'Philips',
+      p_quantidade: 1,
+      p_quantidadeVendas: 40
+    },
+    {
+      p_id: 18,
+      p_nome: 'Smart TV LED 48" Full HD Sony BRAVIA',
+      p_modelo: 'KDL-48W655D',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11298732/954208285/smart-tv-led-48-full-hd-sony-bravia-kdl-48w655d-com-x-reality-pro-motionflow-xr-screen-mirroring-bass-reflex-entradas-hdmi-e-usb-11298732.jpg',
+      p_urlsImages: ['https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11298732/799979921/smart-tv-led-48-full-hd-sony-bravia-kdl-48w655d-com-x-reality-pro-motionflow-xr-screen-mirroring-bass-reflex-entradas-hdmi-e-usb-11298732.jpg', 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11298732/954208014/smart-tv-led-48-full-hd-sony-bravia-kdl-48w655d-com-x-reality-pro-motionflow-xr-screen-mirroring-bass-reflex-entradas-hdmi-e-usb-11298732.jpg'],
+      p_classificacao: 7,
+      p_descricaoBreve: 'Smart TV LED 48" Full HD Sony BRAVIA KDL-48W655D com X-Reality Pro, MotionFlow XR, Screen Mirroring, Bass Reflex, Entradas HDMI e USB.',
+      p_descricaoDetalhada: 'Assista aos melhores conteúdos da internet com qualidade e rapidez em uma tela moderna e elegante. A TV Sony BRAVIA KDL-48W655D oferece a melhor tecnologia em imagem integrada ao X-Reality Pro exclusivamente desenvolvido para Sony. O modelo BRAVIA KDL-48W655D processa qualquer imagem com extrema fidelidade, preservando cores naturais, contornos, brilho, contraste, profundidade e nitidez. Com o Motionflow XR 240, sua TV apresentará muito mais quadros por segundo do que uma TV convencional, reproduzindo cenas mais suaves e com maior nitidez.',
+      p_tipoProduto: 7,
+      p_precoAtual: 1999,
+      p_precoAntigo: 4500,
+      p_marca: 'Sony',
+      p_quantidade: 1,
+      p_quantidadeVendas: 400
+    },
+    {
+      p_id: 19,
+      p_nome: 'Smart TV LED 43" Full HD Samsung',
+      p_modelo: '43J5290',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/13400014/1015263273/smart-tv-led-43-full-hd-samsung-43j5290-com-wide-color-enhancer-plus-espelhamento-de-tela-wi-fi-dolby-digital-plus-hdmi-e-usb-13400014.jpg',
+      p_urlsImages: ['https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/13400014/1015263224/smart-tv-led-43-full-hd-samsung-43j5290-com-wide-color-enhancer-plus-espelhamento-de-tela-wi-fi-dolby-digital-plus-hdmi-e-usb-13400014.jpg', 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/13400014/1015263234/smart-tv-led-43-full-hd-samsung-43j5290-com-wide-color-enhancer-plus-espelhamento-de-tela-wi-fi-dolby-digital-plus-hdmi-e-usb-13400014.jpg'],
+      p_classificacao: 7,
+      p_descricaoBreve: 'Smart TV LED 43" Full HD Samsung 43J5290 com Wide Color Enhancer Plus, Espelhamento de Tela, Wi-Fi, Dolby Digital Plus, HDMI e USB.',
+      p_descricaoDetalhada: 'Desfrute de um nível de realismo de entretenimento em casa maior do que nunca. Graças a uma resolução duas vezes maior do que as de TVs HD normais, a Samsung FHD TV oferece uma experiência visual de tirar o fôlego que o leva para além da tela em um mundo de imersão total. .',
+      p_tipoProduto: 7,
+      p_precoAtual: 1799,
+      p_precoAntigo: 3500,
+      p_marca: 'Samsung',
+      p_quantidade: 1,
+      p_quantidadeVendas: 300
+    },
+    {
+      p_id: 20,
+      p_nome: 'Smart TV LED 32" HD Philco',
+      p_modelo: 'PH32C10DSGWA',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11811081/863753173/smart-tv-led-32-hd-philco-ph32c10dsgwa-com-android-wi-fi-integrado-aptoide-som-surround-midiacast-entradas-hdmi-e-usb-11811081.jpg',
+      p_urlsImages: ['https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11811081/863753323/smart-tv-led-32-hd-philco-ph32c10dsgwa-com-android-wi-fi-integrado-aptoide-som-surround-midiacast-entradas-hdmi-e-usb-11811081.jpg', 'https://www.pontofrio-imagens.com.br/tv-video/Televisores/SmartTV/11811081/863753426/smart-tv-led-32-hd-philco-ph32c10dsgwa-com-android-wi-fi-integrado-aptoide-som-surround-midiacast-entradas-hdmi-e-usb-11811081.jpg'],
+      p_classificacao: 7,
+      p_descricaoBreve: 'Smart TV LED 43" Full HD Samsung 43J5290 com Wide Color Enhancer Plus, Espelhamento de Tela, Wi-Fi, Dolby Digital Plus, HDMI e USB.',
+      p_descricaoDetalhada: 'Desfrute de um nível de realismo de entretenimento em casa maior do que nunca. Graças a uma resolução duas vezes maior do que as de TVs HD normais, a Samsung FHD TV oferece uma experiência visual de tirar o fôlego que o leva para além da tela em um mundo de imersão total. .',
+      p_tipoProduto: 7,
+      p_precoAtual: 1000,
+      p_precoAntigo: 2500,
+      p_marca: 'Philco',
+      p_quantidade: 1,
+      p_quantidadeVendas: 200
+    },
+    {
+      p_id: 22,
+      p_nome: 'Refrigerador Consul Frost Free Facilite',
+      p_modelo: 'PH32C10DSGWA',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/Eletrodomesticos/GeladeiraeRefrigerador/1Porta/10153519/582980403/refrigerador-consul-frost-free-facilite-crb39ak-1-porta-evox-342-litros-10153510.jpg',
+      p_urlsImages: ['https://www.pontofrio-imagens.com.br/Eletrodomesticos/GeladeiraeRefrigerador/1Porta/10153519/582980477/refrigerador-consul-frost-free-facilite-crb39ak-1-porta-evox-342-litros-10153510.jpg', 'https://www.pontofrio-imagens.com.br/Eletrodomesticos/GeladeiraeRefrigerador/1Porta/10153519/582980451/refrigerador-consul-frost-free-facilite-crb39ak-1-porta-evox-342-litros-10153510.jpg'],
+      p_classificacao: 7,
+      p_descricaoBreve: 'Refrigerador Consul Frost Free Facilite CRB39AK 1 Porta Evox – 342 litros.',
+      p_descricaoDetalhada: 'Sua cozinha vai ganhar modernidade e design com a Consul! A nova geladeira Consul Frost Free Facilite CRB39AK une beleza e praticidade em apenas um produto. Confeccionada com a tecnologia Frost Free, dispensa o degelo e não precisa descongelar nunca. Com o controle externo de temperatura, você poderá escolher a temperatura ideal com apenas um botão, sem precisar abrir a porta. Além disso, possui a tecnologia Evox com 3 anos de garantia contra ferrugem e corrosão na porta da sua geladeira. Clique e confira o manual disponível do produto e tire todas as dúvidas.',
+      p_tipoProduto: 7,
+      p_precoAtual: 1499,
+      p_precoAntigo: 2500,
+      p_marca: 'Consul',
+      p_quantidade: 1,
+      p_quantidadeVendas: 25
+    },
 
   ]
 
@@ -240,9 +366,11 @@ export class ProdutosServiceService {
   }
 
   getQuatroProdutosMaisVendidosPorCategoria(tipoProduto:TipoProduto): Array<Produto>{
+    var produtosOrdenadosQuantidade:Array<Produto> ;
     var produtosTipoSolicitado:Array<Produto> = this.getProdutosPorCategoria(tipoProduto);
-    produtosTipoSolicitado.sort((a, b) => a.p_quantidade - b.p_quantidade);
-    return produtosTipoSolicitado.slice(0, 4);
+    produtosOrdenadosQuantidade = produtosTipoSolicitado.sort((a, b) => b.p_quantidadeVendas - a.p_quantidadeVendas);
+    console.log(produtosOrdenadosQuantidade);
+    return produtosOrdenadosQuantidade.slice(0, 4);
   }
   
 }

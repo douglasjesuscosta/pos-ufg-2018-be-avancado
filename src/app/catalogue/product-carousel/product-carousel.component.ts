@@ -9,7 +9,7 @@ import { Produto } from 'src/app/models/produto-model/Produto';
 export class ProductCarouselComponent implements OnInit {
 
   @Input('products') products: Array<Produto>;
-  slideConfig = { "slidesToShow": 3, "slidesToScroll": 4, autoplay: true, autoplaySpeed: 3000, method: {} };
+  slideConfig = { "slidesToShow": 3, "slidesToScroll": 1, autoplay: true, autoplaySpeed: 3000, method: {} };
 
   constructor() {  
   }
@@ -17,7 +17,5 @@ export class ProductCarouselComponent implements OnInit {
   ngOnInit() {
     
   }
-
-  
 
 }

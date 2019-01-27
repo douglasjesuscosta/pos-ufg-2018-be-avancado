@@ -20,7 +20,8 @@ export class CartService {
       p_precoAtual: 2999,
       p_precoAntigo: 4000,
       p_marca: 'Samsung',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 1
     },
     {
       p_id: 2,
@@ -35,7 +36,8 @@ export class CartService {
       p_precoAtual: 2399,
       p_precoAntigo: 2500,
       p_marca: 'Samsung',
-      p_quantidade: 1
+      p_quantidade: 1,
+      p_quantidadeVendas: 2
     }
   ];
 
