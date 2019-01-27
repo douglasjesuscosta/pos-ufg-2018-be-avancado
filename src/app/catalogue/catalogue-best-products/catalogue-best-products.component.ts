@@ -10,6 +10,7 @@ import { TipoProduto } from 'src/app/models/produto-model/TipoProduto';
 })
 export class CatalogueBestProductsComponent implements OnInit {
 
+  private produtosMaisVendidosLoja:Array<Produto>;
   private produtosMaisVendidosEletroDomesticos:Array<Produto>;
   private produtosMaisVendidosInformatica:Array<Produto>;
   private produtosMaisVendidosMoveis:Array<Produto>;
@@ -25,12 +26,13 @@ export class CatalogueBestProductsComponent implements OnInit {
   }
 
   getProdutosMaisVendidosPorCategoria(){
-    this.produtosMaisVendidosEletroDomesticos = this.produtosMaisVendidosEletroDomesticos = this.produtosService.getQuatroProdutosMaisVendidosPorCategoria(TipoProduto.Eletrodomesticos);
-    this.produtosMaisVendidosInformatica = this.produtosMaisVendidosInformatica = this.produtosService.getQuatroProdutosMaisVendidosPorCategoria(TipoProduto.Informatica);
-    this.produtosMaisVendidosMoveis = this.produtosMaisVendidosMoveis = this.produtosService.getQuatroProdutosMaisVendidosPorCategoria(TipoProduto.Moveis);
-    this.produtosMaisVendidosTelefonesCelulares = this.produtosMaisVendidosTelefonesCelulares = this.produtosService.getQuatroProdutosMaisVendidosPorCategoria(TipoProduto.TelefonesCelulares);
-    this.produtosMaisVendidosUtilidadesDomestricas = this.produtosMaisVendidosUtilidadesDomestricas = this.produtosService.getQuatroProdutosMaisVendidosPorCategoria(TipoProduto.UtilidadesDomesticas);
-    this.produtosMaisVendidosEsporte = this.produtosMaisVendidosEsporte = this.produtosService.getQuatroProdutosMaisVendidosPorCategoria(TipoProduto.Esporte);
-    this.produtosMaisVendidosTvVideo = this.produtosMaisVendidosTvVideo = this.produtosService.getQuatroProdutosMaisVendidosPorCategoria(TipoProduto.TvVideo);
+    this.produtosMaisVendidosLoja = this.produtosService.getQuatroProdutosMaisVendidosLojaCarousel();
+    this.produtosMaisVendidosEletroDomesticos = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Eletrodomesticos);
+    this.produtosMaisVendidosInformatica = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Informatica);
+    this.produtosMaisVendidosMoveis = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Moveis);
+    this.produtosMaisVendidosTelefonesCelulares = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.TelefonesCelulares);
+    this.produtosMaisVendidosUtilidadesDomestricas = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.UtilidadesDomesticas);
+    this.produtosMaisVendidosEsporte = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Esporte);
+    this.produtosMaisVendidosTvVideo = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.TvVideo);
   }
 }

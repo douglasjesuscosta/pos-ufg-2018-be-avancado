@@ -338,13 +338,13 @@ export class ProdutosServiceService {
       p_classificacao: 7,
       p_descricaoBreve: 'Refrigerador Consul Frost Free Facilite CRB39AK 1 Porta Evox – 342 litros.',
       p_descricaoDetalhada: 'Sua cozinha vai ganhar modernidade e design com a Consul! A nova geladeira Consul Frost Free Facilite CRB39AK une beleza e praticidade em apenas um produto. Confeccionada com a tecnologia Frost Free, dispensa o degelo e não precisa descongelar nunca. Com o controle externo de temperatura, você poderá escolher a temperatura ideal com apenas um botão, sem precisar abrir a porta. Além disso, possui a tecnologia Evox com 3 anos de garantia contra ferrugem e corrosão na porta da sua geladeira. Clique e confira o manual disponível do produto e tire todas as dúvidas.',
-      p_tipoProduto: 7,
+      p_tipoProduto: 1,
       p_precoAtual: 1499,
       p_precoAntigo: 2500,
       p_marca: 'Consul',
       p_quantidade: 1,
       p_quantidadeVendas: 25
-    },
+    }
 
   ]
 
@@ -365,12 +365,23 @@ export class ProdutosServiceService {
     return produtosTipoSelecionado;
   }
 
-  getQuatroProdutosMaisVendidosPorCategoria(tipoProduto:TipoProduto): Array<Produto>{
-    var produtosOrdenadosQuantidade:Array<Produto> ;
+  getQuatroProdutosMaisVendidosPorCategoriaCarousel(tipoProduto:TipoProduto): Array<Produto>{
     var produtosTipoSolicitado:Array<Produto> = this.getProdutosPorCategoria(tipoProduto);
-    produtosOrdenadosQuantidade = produtosTipoSolicitado.sort((a, b) => b.p_quantidadeVendas - a.p_quantidadeVendas);
-    console.log(produtosOrdenadosQuantidade);
+    var produtosOrdenadosQuantidade:Array<Produto> = this.getQuatroProdutosMaisVendidos(produtosTipoSolicitado);
+
     return produtosOrdenadosQuantidade.slice(0, 4);
+  }
+
+  getQuatroProdutosMaisVendidosLojaCarousel(): Array<Produto>{
+    var produtosOrdenadosQuantidade:Array<Produto> = this.getQuatroProdutosMaisVendidos(this.getProdutos());
+
+    return produtosOrdenadosQuantidade.slice(0, 4);
+  }
+
+  getQuatroProdutosMaisVendidos(listaProdutos:Array<Produto>): Array<Produto>{
+    var produtosOrdenadosQuantidade:Array<Produto> ;
+    produtosOrdenadosQuantidade = listaProdutos.sort((a, b) => b.p_quantidadeVendas - a.p_quantidadeVendas);
+    return produtosOrdenadosQuantidade;
   }
   
 }
