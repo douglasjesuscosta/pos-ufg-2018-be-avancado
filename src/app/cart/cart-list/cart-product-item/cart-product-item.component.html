@@ -12,7 +12,7 @@
 
   <span class="col-md-2">
     <label for="name">Preço</label>
-    {{ product.p_precoAtual }}
+    {{ product.p_precoAtual | currency:'BRL' }}
   </span>
     
   <span class="col-md-1">

@@ -1,6 +1,5 @@
 
 <div class="well">
-
     <div>
         <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
             <div ngxSlickItem *ngFor="let product of products" class="slider">  
@@ -11,7 +10,7 @@
                             <a routerLink="/produto/{{product.p_id}}" >{{product.p_nome}}</a>
                         </h4>
                         <h5 class="price-text-color">
-                            {{product.p_precoAtual}}
+                            {{product.p_precoAtual | currency:'BRL'}}
                         </h5>
                     </div>
                     <div class="card-footer">

@@ -1,22 +1,32 @@
-<div class="row" *ngIf="products.length > 0; else notProducts">
-  <div class="col-xs-12">
-    <app-cart-product-item (productDeleted)="onDeleteProduct($event)"
-      *ngFor="let productEl of products; let i = index"
-      [product]="productEl"
-      [index]="i"></app-cart-product-item>
-  </div>
-  <div class="row">
-    <label for="preco">Preço total da compra</label>
-    {{total}}
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <button type="button" class="btn btn-success" (click)="onFinish()">Concluir Compra</button>
-      <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+<div class="well col-xs-12">
+  <h3>Lista de produtos</h3>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+
+      <div *ngIf="products.length > 0; else notProducts">
+        <div class="row">
+          <div class="col-xs-12">
+            <app-cart-product-item (productDeleted)="onDeleteProduct($event)" *ngFor="let productEl of products; let i = index"
+              [product]="productEl" [index]="i"></app-cart-product-item>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4 for="preco">Preço total da compra: {{ total | currency:'BRL'}}</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="button" class="btn btn-success" (click)="onFinish()">Concluir Compra</button>
+            <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #notProducts>
+        <h3>Nenhum produto adicionado no carrinho</h3>
+      </ng-template>
     </div>
   </div>
 </div>
-
-<ng-template #notProducts>
-  <h3>Nenhum produto adicionado no carrinho</h3>
-</ng-template>
