@@ -18,6 +18,7 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
 import { CatalogueProductsCategoriesComponent } from './catalogue/catalogue-products-categories/catalogue-products-categories.component';
 import { CatalogueCategoriesComponent } from './catalogue/catalogue-categories/catalogue-categories.component';
 import { PurchaseCompletedComponent } from './purchase-completed/purchase-completed.component';
+import { CompraController } from './controller/compra.controller';
 
 @NgModule({
   declarations: [

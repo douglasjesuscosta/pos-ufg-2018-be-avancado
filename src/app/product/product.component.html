@@ -32,7 +32,7 @@
           <div class="col-xs-2">
             <div class="form-group">
               <label for="name">Quantidade</label>
-              <input type="number" id="name" class="form-control" [(ngModel)]="product.p_quantidade">
+              <input type="number" id="name" class="form-control" [(ngModel)]="product.p_quantidade" min="1">
             </div>
             <button type="button" class="btn btn-success" (click)="onAddProductCart()">Adicionar no meu carrinho</button>
           </div>

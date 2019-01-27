@@ -1,7 +1,11 @@
 import { Produto } from '../models/produto-model/Produto';
 import { Compra } from '../models/compra-model/Compra';
 import { CompraService } from '../services/compra.service';
+import { Injectable } from '@angular/core';
 
+@Injectable({
+    providedIn: 'root'
+})
 export class CompraController{
 
     constructor(private compraService: CompraService){
