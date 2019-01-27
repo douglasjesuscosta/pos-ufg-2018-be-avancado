@@ -16,13 +16,13 @@
       <td>{{ i }}</td>
       <td>{{ product.p_nome }}</td>
       <td>{{ product.p_quantidade }}</td>
-      <td>{{ product.p_precoAtual }}</td>
+      <td>{{ product.p_precoAtual | currency:'BRL' }}</td>
     </tr>
     <tr>
       <td>Total</td>
       <td></td>
       <td></td>
-      <td>{{total}}</td>
+      <td>{{total | currency:'BRL'}}</td>
     </tr>
   </table>
 </div>
