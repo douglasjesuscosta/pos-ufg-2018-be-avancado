@@ -11,6 +11,7 @@ import { Produto } from 'src/app/models/produto-model/Produto';
 export class CatalogueProductsCategoriesComponent implements OnInit {
   private listaProdutosCatetgoria:Array<Produto>;
   private listaArrayProdutosCarousel:Array<Array<Produto>>;
+  private title:string;
 
   @Input("tipoCategoria") tipoProduto:TipoProduto;
   @Input("idCategoria") idCategoria;
@@ -34,6 +35,8 @@ export class CatalogueProductsCategoriesComponent implements OnInit {
 
   carrregarListaExibicaoCarousel() {
     console.log("Teste");
+    this.title = TipoProduto[this.idCategoria];
+    console.log(this.title);
     this.listaArrayProdutosCarousel = new Array<Array<Produto>>();
     this.listaProdutosCatetgoria = this.produtoService.getProdutosPorCategoria(this.idCategoria);
 

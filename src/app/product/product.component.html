@@ -18,19 +18,24 @@
           </div>
         </ngx-slick-carousel>
       </div>
-      <div class="col-md-5">
-        <div class="form-group">
-          <label for="name">Preço</label>
-          <p>{{product.p_precoAtual}}</p>
+      <div class="col-xs-5">
+        <div>
+          <p>{{product.p_descricaoBreve}}</p>
+          <p>{{product.p_descricaoDetalhada}}</p>
         </div>
-
+        <div class="form-group">
+            <label for="name">Preço</label>
+            <p>{{product.p_precoAtual}}</p>
+          </div>
+      </div>
+      <div class="col-xs-2">
         <div class="form-group">
           <label for="name">Quantidade</label>
           <input type="number" id="name" class="form-control" [(ngModel)]="product.p_quantidade">
         </div>
-
         <button type="button" class="btn btn-success" (click)="onAddProductCart()">Adicionar no meu carrinho</button>
       </div>
+
     </div>
   </div>
 </div>

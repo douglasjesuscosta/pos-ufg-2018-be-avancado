@@ -140,7 +140,7 @@ export class ProdutosServiceService {
       p_id: 9,
       p_nome: 'Conjunto de Panelas Tramontina',
       p_modelo: 'Turim',
-      p_urlPrincipalImage: 'https://www.pontofrio.com.br/UtilidadesDomesticas/Panelas/conjuntodepanelas/conjunto-de-panelas-tramontina-turim-aluminio-10-pecas-11668969.html?recsource=busca-int&rectype=busca-374',
+      p_urlPrincipalImage: 'https://www.pontofrio-imagens.com.br/UtilidadesDomesticas/Panelas/conjuntodepanelas/11668969/852250218/conjunto-de-panelas-tramontina-turim-aluminio-10-pecas-11668969.jpg',
       p_urlsImages: ['https://www.pontofrio-imagens.com.br/UtilidadesDomesticas/Panelas/conjuntodepanelas/11668969/852250218/conjunto-de-panelas-tramontina-turim-aluminio-10-pecas-11668969.jpg'],
       p_classificacao: 3,
       p_descricaoBreve: 'Turim Alumínio - 10 Peças.',

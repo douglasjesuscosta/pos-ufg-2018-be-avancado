@@ -1,9 +1,9 @@
 export enum TipoProduto{
-    Eletrodomesticos = 1,
-    Informatica = 2, 
-    Moveis = 3,
-    TelefonesCelulares = 4,
-    UtilidadesDomesticas = 5,
-    Esporte = 6,
-    TvVideo = 7
+    'Eletrodomesticos' = 1,
+    'Informática' = 2, 
+    'Móveis' = 3,
+    'Telefones Celulares' = 4,
+    'Utilidades Domesticas' = 5,
+    'Esporte' = 6,
+    'Tv e Vídeo' = 7
 }

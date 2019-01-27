@@ -27,12 +27,12 @@ export class CatalogueBestProductsComponent implements OnInit {
 
   getProdutosMaisVendidosPorCategoria(){
     this.produtosMaisVendidosLoja = this.produtosService.getQuatroProdutosMaisVendidosLojaCarousel();
-    this.produtosMaisVendidosEletroDomesticos = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Eletrodomesticos);
-    this.produtosMaisVendidosInformatica = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Informatica);
-    this.produtosMaisVendidosMoveis = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Moveis);
-    this.produtosMaisVendidosTelefonesCelulares = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.TelefonesCelulares);
-    this.produtosMaisVendidosUtilidadesDomestricas = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.UtilidadesDomesticas);
+    this.produtosMaisVendidosEletroDomesticos = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto["Eletrodomesticos"]);
+    this.produtosMaisVendidosInformatica = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto["Informática"]);
+    this.produtosMaisVendidosMoveis = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto["Móveis"]);
+    this.produtosMaisVendidosTelefonesCelulares = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto["Telefones Celulares"]);
+    this.produtosMaisVendidosUtilidadesDomestricas = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto["Utilidades Domesticas"]);
     this.produtosMaisVendidosEsporte = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.Esporte);
-    this.produtosMaisVendidosTvVideo = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto.TvVideo);
+    this.produtosMaisVendidosTvVideo = this.produtosService.getQuatroProdutosMaisVendidosPorCategoriaCarousel(TipoProduto["Tv e Vídeo"]);
   }
 }
