@@ -5,6 +5,7 @@ import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
 import { ProductCarouselComponent } from './catalogue/product-carousel/product-carousel.component';
 import { CatalogueComponent } from './catalogue/catalogue.component';
+import { PurchaseCompletedComponent } from './purchase-completed/purchase-completed.component';
 
 
 const appRoutes: Routes = [
@@ -12,7 +13,8 @@ const appRoutes: Routes = [
   { path: 'bemvindo', component: HomeComponent },
   { path: 'meucarrinho', component: CartComponent},
   { path: 'produto/:id', component: ProductComponent },
-  { path: 'produtos', component:CatalogueComponent}
+  { path: 'produtos', component:CatalogueComponent},
+  { path: 'compraConcluida', component: PurchaseCompletedComponent }
 ];
 
 @NgModule({
