@@ -1,30 +1,33 @@
 
-<div>
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-        <div ngxSlickItem *ngFor="let product of products" class="slider">  
-            <div class="col-item col-lg-10 card h-100">
-                <img [src]="product.p_urlPrincipalImage" class="img-responsive card-img-top" alt="a" />
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a routerLink="/produto/{{product.p_id}}" >{{product.p_nome}}</a>
-                    </h4>
-                    <h5 class="price-text-color">
-                        {{product.p_precoAtual}}
-                    </h5>
-                </div>
-                <div class="card-footer">
-                    <div class="separator clear-left">
-                        <p class="btn-add">
-                            <i class="fa fa-shopping-cart"></i><a class="hidden-sm" (click)="adicionarCarrinho(product)" >Add to cart</a></p>
-                        <p class="btn-details">
-                            <i class="fa fa-list"></i><a routerLink="/produto/{{product.p_id}}" class="hidden-sm">More details</a></p>
+<div class="well">
+
+    <div>
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let product of products" class="slider">  
+                <div class="col-item col-lg-10 card h-100">
+                    <img [src]="product.p_urlPrincipalImage" class="img-responsive card-img-top" alt="a" />
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a routerLink="/produto/{{product.p_id}}" >{{product.p_nome}}</a>
+                        </h4>
+                        <h5 class="price-text-color">
+                            {{product.p_precoAtual}}
+                        </h5>
+                    </div>
+                    <div class="card-footer">
+                        <div class="separator clear-left">
+                            <p class="btn-add">
+                                <i class="fa fa-shopping-cart"></i><a class="hidden-sm" (click)="adicionarCarrinho(product)" >Adicionar ao carrinho</a></p>
+                            <p class="btn-details">
+                                <i class="fa fa-list"></i><a routerLink="/produto/{{product.p_id}}" class="hidden-sm">Mais detalhes</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </ngx-slick-carousel>
-</div> 
+            </div>
+        </ngx-slick-carousel>
+    </div> 
+</div>
 
 
 
