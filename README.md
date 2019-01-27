@@ -1,3 +1,18 @@
+Universidade Federal de Goiás
+Especilização em Desenvolvimento Web e Mobile - Full Stack
+
+Trabalho de Fundamentos de Programação Frontend Avançado
+
+Alunos: Douglas de Jesus Costa
+        Lucas de Castro Ribeiro
+        
+Tecnologias usadas:
+        Angular 7,
+        Bootstrap 3
+Modelo seguido:
+        MVC
+
+
 # BeAvancado
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
