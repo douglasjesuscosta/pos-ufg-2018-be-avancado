@@ -53,6 +53,7 @@ export class CartService {
 
   addProduto(product: Produto) {
     this.produtos.push(product);
+    this.productsChanged.next(this.produtos.slice());
   }
 
   deleteProduct(id: any) {
