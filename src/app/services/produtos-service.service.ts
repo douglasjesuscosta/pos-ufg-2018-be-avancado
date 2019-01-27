@@ -234,7 +234,7 @@ export class ProdutosServiceService {
     return this.produtos.find(p => p.p_id === index);
   }
 
-  getProdutosPorCategoria(tipoProduto:TipoProduto): Array<Produto>{
+  getProdutosPorCategoria(tipoProduto:number): Array<Produto>{
     var produtosTipoSelecionado = this.produtos.filter(produto => produto.p_tipoProduto == tipoProduto);
     return produtosTipoSelecionado;
   }

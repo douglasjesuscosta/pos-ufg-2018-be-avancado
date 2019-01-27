@@ -11,23 +11,24 @@ import { ProdutosServiceService } from '../services/produtos-service.service';
 })
 export class CatalogueComponent implements OnInit {
 
-  private  tipoProdutoSelecionado: TipoProduto;
+  private  idCategoria: number;
   private exibirComponentCategoria: boolean;
 
   constructor(private catalogoService: CatalogueService, private produtosService:ProdutosServiceService) { }
 
   ngOnInit() {
-    this.tipoProdutoSelecionado = this.catalogoService.getTipoProdutoSelecionado();
+    this.idCategoria = this.catalogoService.getTipoProdutoSelecionado();
     this.avaliarExibicaoComponent();
   }
 
   avaliarExibicaoComponent(){
-    this.exibirComponentCategoria = this.tipoProdutoSelecionado == null ? false : true;
+    this.exibirComponentCategoria = this.idCategoria == null ? false : true;
   }
 
-  onCategoryClick(categoryNumber){
+  onCategoryClick(idCategoria){
     this.exibirComponentCategoria = true;
-    this.catalogoService.setTipoProdutoSelecionado(categoryNumber);
+    this.idCategoria = idCategoria;
+    this.catalogoService.setTipoProdutoSelecionado(idCategoria);
   }
 
 }

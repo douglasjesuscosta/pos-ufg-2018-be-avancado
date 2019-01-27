@@ -18,4 +18,6 @@ export class ProductCarouselComponent implements OnInit {
     
   }
 
+  
+
 }
