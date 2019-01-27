@@ -17,6 +17,7 @@ import { ProductCarouselComponent } from './catalogue/product-carousel/product-c
 import { CatalogueComponent } from './catalogue/catalogue.component';
 import { CatalogueProductsCategoriesComponent } from './catalogue/catalogue-products-categories/catalogue-products-categories.component';
 import { CatalogueCategoriesComponent } from './catalogue/catalogue-categories/catalogue-categories.component';
+import { PurchaseCompletedComponent } from './purchase-completed/purchase-completed.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CatalogueCategoriesComponent } from './catalogue/catalogue-categories/c
     CatalogueComponent,
     CatalogueBestProductsComponent,
     CatalogueProductsCategoriesComponent,
-    CatalogueCategoriesComponent
+    CatalogueCategoriesComponent,
+    PurchaseCompletedComponent
   ],
   imports: [
     BrowserModule,

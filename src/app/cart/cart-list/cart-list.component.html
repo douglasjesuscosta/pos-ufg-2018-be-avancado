@@ -1,9 +1,13 @@
-<div class="row">
+<div class="row" *ngIf="products.length > 0; else notProducts">
   <div class="col-xs-12">
-    <app-cart-product-item
+    <app-cart-product-item (productDeleted)="onDeleteProduct($event)"
       *ngFor="let productEl of products; let i = index"
       [product]="productEl"
       [index]="i"></app-cart-product-item>
+  </div>
+  <div class="row">
+    <label for="preco">Preço total da compra</label>
+    {{total}}
   </div>
   <div class="row">
     <div class="col-xs-12">
@@ -12,3 +16,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #notProducts>
+  <h3>Nenhum produto adicionado no carrinho</h3>
+</ng-template>

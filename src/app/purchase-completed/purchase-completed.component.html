@@ -1,0 +1,28 @@
+<div class="row">
+  <h2>Compra concluída com sucesso</h2>
+</div>
+<div class="row">
+  <h6>Lista de produtos</h6>
+</div>
+<div class="row" >
+  <table class="table table-striped">
+    <tr>
+      <th></th>
+      <th>Nome</th>
+      <th>Quantidade</th>
+      <th>Preço</th>
+    </tr>
+    <tr *ngFor="let product of products; let i = index">
+      <td>{{ i }}</td>
+      <td>{{ product.p_nome }}</td>
+      <td>{{ product.p_quantidade }}</td>
+      <td>{{ product.p_precoAtual }}</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td></td>
+      <td>{{total}}</td>
+    </tr>
+  </table>
+</div>

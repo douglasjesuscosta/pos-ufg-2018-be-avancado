@@ -6,15 +6,20 @@
     </a>
   </span>
     
-  <span class="col-md-3">
+  <span class="col-md-2">
     <img [src]="product.p_urlPrincipalImage" alt="{{ product.p_nome }}" class="img-responsive" style="max-height: 100px;">
   </span>
-    
+
   <span class="col-md-2">
-    <label for="name">Quantidade</label>
-    <input type="number" id="name" class="form-control" [(ngModel)]="product.p_quantidade">
+    <label for="name">Preço</label>
+    {{ product.p_precoAtual }}
   </span>
-  <span class="col-md-2">
-    <i class="fas fa-trash-alt fa-2x"></i>
+    
+  <span class="col-md-1">
+    <label for="name">Quantidade</label>
+    <input type="number" id="name" class="form-control" [(ngModel)]="product.p_quantidade" (ngModelChange)="update(product.p_quantidade, product.p_id)">
+  </span>
+  <span class="col-md-1">
+    <button class="btn" (click)="deleteProductCart(product.p_id)"><i class="fas fa-trash-alt fa-2x"></i></button>
   </span>
 </div>

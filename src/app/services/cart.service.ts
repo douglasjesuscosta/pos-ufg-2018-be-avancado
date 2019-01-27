@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Produto } from '../models/produto-model/Produto';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
+  productsChanged = new Subject<Produto[]>();
 
   private produtos: Produto[] = [
     {
@@ -51,5 +53,19 @@ export class CartService {
 
   addProduto(product: Produto) {
     this.produtos.push(product);
+  }
+
+  deleteProduct(id: any) {
+    for(var i = 0; i < this.produtos.length; i++) {
+      if(this.produtos[i].p_id === id.productId) {
+        this.produtos.splice(i, 1);
+      }
+    }
+    this.productsChanged.next(this.produtos.slice());
+  }
+
+  emptyCart() {
+    this.produtos = [];
+    this.productsChanged.next(this.produtos.slice());
   }
 }
